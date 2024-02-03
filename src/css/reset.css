@@ -16,7 +16,7 @@ a {
 ul,
 ol,
 li {
-	list-style: none;
+	/* list-style: none; */
 }
 
 img {
@@ -31,7 +31,6 @@ h5,
 h6 {
 	font-weight: inherit;
 	font-size: inherit;
-	text-align: right;
 }
 
 html,
@@ -39,6 +38,7 @@ body {
 	height: 100%;
 	line-height: 1;
 	font-size: 16px;
+	scroll-behavior: smooth;
 }
 
 textarea,

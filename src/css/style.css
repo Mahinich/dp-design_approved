@@ -2,6 +2,7 @@
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
+	color: #fff;
 }
 
 .container {
@@ -16,23 +17,38 @@ section {
 /* GENERAL END */
 
 /* HEADER START */
-.header {
+∫∫.header {
   height: 8.75rem;
   background: rgba(112, 53, 255, 0.80);
-  backdrop-filter: blur(1.25rem);
+  -webkit-backdrop-filter: blur(1.25rem);
+          backdrop-filter: blur(1.25rem);
   display: grid;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   .header-wrap {
     /* display: -webkit-inline-flex; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     .nav-list {
+      display: -webkit-box;
       display: flex;
       display: -ms-flexbox;
-      display: -webkit-flex;
       display: -ms-inline-flexbox;
       display: -webkit-inline-flex;
+      .nav-item {
+        text-transform: uppercase;
+          
+        &:not(:first-child) {
+          margin-left: 4rem;
+        }
+      }
     }
   }
 }
@@ -41,14 +57,107 @@ section {
 /* PROMO START */
 .promo {
   background: url('../images/promo/background-promo.jpg') center / cover no-repeat;
-
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 32rem;
+  }
+  .txt-and-btn {
+    margin-top: 2.625rem;
+    width: 37.813rem;
+    margin-right: 2rem;
+    .title {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.25;
+      text-shadow: 0rem .125rem 0rem rgba(0, 0, 0, 0.25);
+      margin-bottom: 2rem;
+    }
+    .description {
+      font-size: 2.25rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 2.625rem;
+      margin-bottom: 4rem;
+    }
+    .btn {
+      border-radius: .5rem;
+      background: var(--gradient-02, linear-gradient(180deg, #FFE86F 0%, #FF371E 100%));
+      -webkit-box-shadow: 0rem .125rem 0rem 0rem rgba(0, 0, 0, 0.25);
+              box-shadow: 0rem .125rem 0rem 0rem rgba(0, 0, 0, 0.25);
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 1.5rem;
+    }
+  }
+  .img {
+    padding-left: 2.875rem;
+    & img {
+      width: 32rem;
+      height: auto;
+    }
+  }
 }
 /* PROMO END */
 
 /* WHO-WE-ARE START */
 .who-we-are {
+  padding-top: 4.156rem;
+  padding-bottom: 4.156rem;
   background: url('../images/who_we_are/background-who_we_are.jpg') center / cover no-repeat;
-
+  .wrap {
+    width: 64.25rem;
+    height: 41.688rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background: -o-linear-gradient(top, rgba(0, 74, 145, 0.50) 0%, rgba(4, 41, 1, 0.50) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 74, 145, 0.50)), to(rgba(4, 41, 1, 0.50)));
+    background: linear-gradient(180deg, rgba(0, 74, 145, 0.50) 0%, rgba(4, 41, 1, 0.50) 100%);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    padding: 4rem;    
+        
+  }
+  .title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 0rem 0rem 3.125rem #FFF;
+    margin-bottom: 4rem;
+    position: relative;
+  &::before {
+    content:url('../images/who_we_are/strawberry.png');
+    position: absolute;
+    top: -8.063rem;
+    left: 0;
+  }
+  }
+  .description {
+    font-size: 1.75rem;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 3.25rem;
+    & span {
+      font-weight: 700;
+    }
+  }
+  .list-caption {
+      font-weight: 700;
+      font-size: 1.75rem;
+  }
+  .list {
+      font-size: 1.75rem;
+      font-weight: 300;
+      list-style-type: disc;
+      line-height: normal;
+      padding-left: 36px;
+  }
 }
 /* WHO-WE-ARE END*/
 
