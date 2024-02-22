@@ -6,34 +6,41 @@
   <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/png">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Dream Play</title>
 </head>
 <body>
   <header class="header">
-    <div class="header-wrap container">
-      <div class="logo"><img src="images/header/logo.svg" alt="Dream-Play-logo"></div>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#about">About Us</a></li>
-          <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
-          <li class="nav-item"><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav>
+    <div class="container">
+      <div class="header-wrap">
+        <img class="logo" src="images/header/logo.svg" alt="Dream-Play-logo">
+        
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#about">About Us</a></li>
+            <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+        </div>
+      </div>
     </div>
   </header>
+
+  <div class="header-pillow"></div>
 
   <main class="main">
     <section class="promo">
       <div class="container">
         <div class="content">
           <div class="txt-and-btn">
-            <h1 class="title">We Create the best games You Just Can't Stop Playing!</h1>
-            <div class="description">We're not just a company, we're a community of passionate gamers.</div>
-            <button class="btn">See Portfolio<a href=""></a></button>
+            <h1 class="title">A Masterpiece of Engineering and Design in All-New Games </h1>
+            <div class="description">Through our game development, we aim to create experiences that keep you getting it out of your system.</div>
+            <a href="#portfolio"><button class="btn">See Portfolio</button></a>
           </div>
-          <div class="img"><img src="images/promo/slot-machine.png" alt="slot-machine"></div>
+          <div class="promo-img"><img src="images/promo/slot-machine.png" alt="slot-machine"></div>
         </div>
       </div>
     </section>
@@ -42,29 +49,46 @@
       <div class="container">
         <div class="wrap">
           <h2 class="title">Who we are?</h2>
-          <p class="description"><span>Mechanic Games</span> - Game design studio that specializes in creating video games. We are a team of professionals who work together to develop and produce video/slot games. These professionals may include the best game designers, programmers, artists, and sound designers.</p>
+          <!-- <p class="description"><span>Mechanic Games</span> - Game design studio that specializes in creating video games. We are a team of professionals who work together to develop and produce video/slot games. These professionals may include the best game designers, programmers, artists, and sound designers.</p> -->
+          <ul class="description">
+            <li>We craft the finest games designed to be endlessly entertaining. </li>
+            <li>Dream Play elevates your fun with the ultimate combination of style, innovation, and unparalleled performance.
+            </li>
+            <li>With its powerful engine, and cutting-edge technology these iconic games embody the spirit of fun and allure.
+            </li>
+            <li>Our team provides groundbreaking visuals and guarantees an immersive gaming experience that comes to life in stunning details. 
+            </li>
+            <li>indulge in a spirit that embodies elegance and confidence.</li>
+          </ul>
 
           <div class="list-caption">
             We offer the following solutions for you business:
           </div>
+         <!--  <dl class="list">
+            <dt class="point-name">Game engine solution</dt>
+            <dl class='point-descr'>Games with the best logic and mathematics, bonus mechanics</dl>
+            <dt class="point-name">Unique game design</dt>
+            <dl class='point-descr'>Blend of style that evoke sophistication and allure casino slots and instant games
+            </dl>
+          </dl> -->
           <ul class="list">
-            <li>Unique Design for the clientOwn preloader for casino/aggregators</li>
-            <li>Own preloader for casino/aggregators</li>
-            <li>Support of Crypto-currency and Social casino mode</li>
-            <li>Support of promotional tools (freebets, tournaments)</li>
-            <li>Integration features (API Validation & Testing Tool, Backoffice Statistics Management)</li>
+            <li class="list-point">Unique Design for the clientOwn preloader for casino/aggregators
+            </li>
+            <p class="point-descr">Games with the best logic and mathematics, bonus mechanics</p>
+            
+            <li class="list-point">Own preloader for casino/aggregators</li>
+            <p class="point-descr">Blend of style that evoke sophistication and allure casino slots and instant games</p>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="portfolio" class="portfolio">
-      
       <div class="container">
         <h2 class="title">Portfolio</h2>
         <div class="slider swiper">
-          <!-- <span class="prev"></span> -->
-          <!-- <span class="next"></span> -->
+          <span class="prev"></span>
+          <span class="next"></span>
           <div class="slider-line swiper-wrapper">
 
               <div class="game-item swiper-slide">
@@ -283,16 +307,88 @@
                   </div>
                 </div>
               </div>
+
+              <div class="game-item swiper-slide">
+                <img src="images/portfolio/olympus-fortune.png" alt="olympus-game" class="game-img">
+                <div class="game-descr">
+                  <div class="game-name">Olympus Fortune</div>
+                  <div class="game-stats">
+                    <div class="stats-names">
+                      <span>RTP:</span>
+                      <span>Max Win:</span>
+                      <span>Volatility:</span>
+                      <span>Volatility:</span>
+                      <span>Volatility:</span>
+                    </div>
+
+                    <div class="stats-descr">
+                      <span>95.67%</span>
+                      <span>x250</span>
+                      <span>Medium-low</span>
+                      <span>Medium-low</span>
+                      <span>Medium-low</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item swiper-slide">
+                <img src="images/portfolio/olympus-fortune.png" alt="olympus-game" class="game-img">
+                <div class="game-descr">
+                  <div class="game-name">Olympus Fortune</div>
+                  <div class="game-stats">
+                    <div class="stats-names">
+                      <span>RTP:</span>
+                      <span>Max Win:</span>
+                      <span>Volatility:</span>
+                      <span>Volatility:</span>
+                      <span>Volatility:</span>
+                    </div>
+
+                    <div class="stats-descr">
+                      <span>95.67%</span>
+                      <span>x250</span>
+                      <span>Medium-low</span>
+                      <span>Medium-low</span>
+                      <span>Medium-low</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item swiper-slide">
+                <img src="images/portfolio/olympus-fortune.png" alt="olympus-game" class="game-img">
+                <div class="game-descr">
+                  <div class="game-name">Olympus Fortune</div>
+                  <div class="game-stats">
+                    <div class="stats-names">
+                      <span>RTP:</span>
+                      <span>Max Win:</span>
+                      <span>Volatility:</span>
+                      <span>Volatility:</span>
+                      <span>Volatility:</span>
+                    </div>
+
+                    <div class="stats-descr">
+                      <span>95.67%</span>
+                      <span>x250</span>
+                      <span>Medium-low</span>
+                      <span>Medium-low</span>
+                      <span>Medium-low</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-pagination"></div>
 
           <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-       <!--  <div class="slider-order">
-          <span class="current-num">3</span> / <span class="general-num">9</span>
-        </div> -->
+          <div class="swiper-button-next"></div> -->
+        <div class="slider-order">
+          <span class="current-num">3</span> / <span class="total-num">9</span>
+        </div>
       </div>
     </section>
 
@@ -328,11 +424,12 @@
       <div class="container">
         <div class="container">
           <div class="animation">
-            <img class="cloud" src="images/dream_play_anim/cloud.png" alt="">
+            <lottie-player src="dreamplay.json" background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
+            <!-- <img class="cloud" src="images/dream_play_anim/cloud.png" alt="">
             <div class="words">
               <img class="dream-word" src="images/dream_play_anim/dream.png" alt="">
               <img class="play-word" src="images//dream_play_anim/play.png" alt="">
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -340,7 +437,6 @@
     </section>
   </main>
 
-  <script src="js/swiper-bundle.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
